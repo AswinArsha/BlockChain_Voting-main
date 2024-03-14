@@ -1,0 +1,42 @@
+.main-page{
+    background-color: rgb(255, 255, 255);
+    z-index: -424;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    width: 100rem;
+    height: 0rem;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    
+ }
+
+ 
+ 
+ .metamask{
+     background-color: #ffffff;
+     box-shadow: 2px 2px 9px rgb(188, 188, 188);
+     height: 3rem;
+     position: relative;
+     justify-content: center;
+     width: 50rem;
+     margin: 1rem auto;
+     margin-left: 25rem;
+     border-radius:2rem ;
+
+     
+     
+ }
+
+
+ .metamask h1{
+     
+     text-align: center;
+     font-size: 1.1rem;
+     padding: 1rem;
+   
+     
+     }
+
+   
+ 

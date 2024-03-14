@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: 'Poppins', sans-serif;
+ 
+}
+
+.background img{
+  width: 100%;
+ 
+  
+}
+
+.navb{
+  position: sticky;
+  top: 0;
+  
+
+}
+
+.main-content {
+  display:flex;
+  justify-content: center;
+    animation-duration: 1.5s;
+    animation-name:headAnimation;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    opacity: 0;
+  
+}
+@keyframes headAnimation{
+  50% {
+    visibility: hidden;
+    opacity: 0.1;
+    
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+}
+
+.main-content .head h1{
+
+  font-size: 5rem;
+  margin-top: 4rem;
+  padding-left: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+
+.main-content .head p{
+
+  font-size: 1.2rem;
+
+   
+}
+
+.main-content .head h1::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(197, 0, 204, 0.281), rgb(123, 19, 151));
+  margin:auto ;
+  display: block;
+
+}
+
+
+.main-box{
+  display: flex;
+  justify-content: center;
+}
+.box{
+  border-radius: 3rem;
+  box-shadow: 2px 2px 8px rgb(122, 122, 122);
+
+  background-color: rgb(255, 255, 255);
+  height: 25rem;
+  width: 83rem;
+  display: flex;
+  box-sizing: border-box;
+  position: relative; 
+  
+}
+
+.box p{
+  position: absolute;
+  margin-left: 23rem;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  animation-duration: 3s;
+  animation-name:pAnimation;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  opacity: 0;
+}
+@keyframes pAnimation {
+  50% {
+    visibility: hidden;
+    opacity: 0.1;
+    
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    width: 90rem;;
+  }
+  100% {
+     width: 20rem;
+  }
+}
+
+.sub-box{
+  border-radius: 3rem;
+  box-shadow: 2px 2px 8px rgb(122, 122, 122);
+  background-color: rgb(123, 19, 151);
+  height: 25rem;
+  width: 20rem;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out forwards;
+  justify-content: center;
+  animation-duration: 1.5s;
+  animation-name: slideInLeft;
+  align-items: center;
+  display: flex ;
+  z-index: 3;
+}
+
+.sub-box img{
+  height: 12rem;
+  animation-duration: 2s;
+  animation-name:addAnimation;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  opacity: 0;
+  mix-blend-mode: screen;
+  filter: contrast( 1.5);
+  border-radius: 6rem;
+  
+}
+
+.rotateimghome{
+   width: 12rem;
+   animation: rotation 6s infinite linear;
+}
+
+@keyframes addAnimation {
+  50% {
+    visibility: hidden;
+    opacity: 0.1;
+  }
+  100% {
+    
+    visibility: visible;
+    opacity: 1;
+    
+  }
+  
+}
+@keyframes rotation {
+  100%{
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
