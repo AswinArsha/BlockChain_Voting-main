@@ -87,4 +87,4 @@
 
 ---
 
-That's it! You have now installed and set up your project. You can begin developing your blockchain voting application.
+That's it! You have now installed and set up your project.
